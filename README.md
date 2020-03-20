@@ -28,6 +28,19 @@
 
 ### Enjoy your fully unlocked Motorola E4 Plus Device!
 
+# ROOT YOUR MOTO E4 PLUS (Use twrp wood for none PLUS model)
+
+* Enable USB Debugging Mode and OEM Unlock in your mobile
+* If your device is on, type "adb reboot recovery" and when you see the dead android logo press power + volume up to enter recovery mode
+* Download TWRP https://nr1.nu/motorola/root_files/twrp-3.2.3-1-nicklaus.img and https://nr1.nu/motorola/root_files/fstab.qcom.zip
+* You should now see "=> FASTBOOT mode..." on your device, confirm that you can see your device by type: fastboot devices, if you can see your devie you are ready to root the device.
+* You can change mode by type "fastboot oem lock-state info" - But we still want to be in fastboot mode so this is not required
+* Now type: fastboot oem lock-state info - Press volume up to lock bootloader and volume down to unlock bootloader, we want it unlocked so press volume down
+* Now type: fastboot oem unlock and hit volume up, your bootloader should now be unlocked
+* Boot into twrp, and flash your device by hit adb sideload and on computer type "adb sideload Magisk...zip"
+
+### Your device should be fully rooted from now.
+
 # PREVIEWS - STEP BY STEP
 
 ![Screenshot](.preview/1.png)
